@@ -1,4 +1,4 @@
-# ObservableIndexeddb
+# Observable IndexedDB
 
 This service has been created to easily deal with IndexedDB using rxjs.
 
@@ -16,37 +16,37 @@ To start the service you need to setup and init it, with the methods setup(datab
 
 The database setup object have the following structure:
 
-{
-    name: string,
-    version: number,
-    objectStores: [
-        {
-            name: string,
-            keyPath: string | string[],
-            autoIncrement: boolean,
-            indexes: [
-                {
-                    name: string,
-                    keyPath: string | string[],
-                    unique: boolean
-                }
-            ]
-        }
-    ]
+{\
+    name: string,\
+    version: number,\
+    objectStores: [\
+        {\
+            name: string,\
+            keyPath: string | string[],\
+            autoIncrement: boolean,\
+            indexes: [\
+                {\
+                    name: string,\
+                    keyPath: string | string[],\
+                    unique: boolean\
+                }\
+            ]\
+        }\
+    ]\
 }
 
 ## Methods
 
-setup(databaseSettings: Database)
-init(): Observable<any>
-insert(storeName: string, object: object): Observable<any>
-load(storeName: string, key: any): Observable<any>
-loadByIndex(storeName: string, indexName: string, key: any): Observable<any>
-loadAll(storeName: string): Observable<any>
-update(storeName: string, key: any, object: object): Observable<any>
-updateByIndex(storeName: string, indexName: string, key: any, object: object): Observable<any>
-delete(storeName: string, key: any): Observable<any>
-deleteDatabase(): Observable<any>
+setup(databaseSettings: Database)\
+init(): Observable<any>\
+insert(storeName: string, object: object): Observable<any>\
+load(storeName: string, key: any): Observable<any>\
+loadByIndex(storeName: string, indexName: string, key: any): Observable<any>\
+loadAll(storeName: string): Observable<any>\
+update(storeName: string, key: any, object: object): Observable<any>\
+updateByIndex(storeName: string, indexName: string, key: any, object: object): Observable<any>\
+delete(storeName: string, key: any): Observable<any>\
+deleteDatabase(): Observable<any>\
 
 ## Examples
 
