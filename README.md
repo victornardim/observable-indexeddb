@@ -38,7 +38,7 @@ The database setup object have the following structure:
 
 ## Methods
 ```javascript
-setup(databaseSettings: Database)
+setup(databaseSettings: Database): void
 
 init(): Observable<any>
 

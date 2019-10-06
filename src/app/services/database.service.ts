@@ -11,7 +11,7 @@ export class DatabaseService {
 
     constructor() { }
 
-    setup(database: Database) {
+    setup(database: Database): void {
         this.databaseSettings = database;
     }
 
