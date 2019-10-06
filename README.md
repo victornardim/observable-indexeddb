@@ -15,7 +15,7 @@ To start the service you need to setup and init it, with the methods setup(datab
 ## Database setup object
 
 The database setup object have the following structure:
-
+```
 {\
     name: string,\
     version: number,\
@@ -34,6 +34,7 @@ The database setup object have the following structure:
         }\
     ]\
 }
+```
 
 ## Methods
 
