@@ -10,7 +10,7 @@ Import the content of the services folder to your project.
 
 To start the service you need to setup and init it, with the methods setup(databaseSettings: Database) and init().
 
-**For the deleteDatabase() method you just have to setup it. If it has been initted, the database cannot be deleted.**
+**For the deleteDatabase() method you just have to setup it. If initted, the database cannot be deleted.**
 
 ## Database setup object
 
@@ -39,14 +39,23 @@ The database setup object have the following structure:
 ## Methods
 ```javascript
 setup(databaseSettings: Database)
+
 init(): Observable<any>
+
 insert(storeName: string, object: object): Observable<any>
+
 load(storeName: string, key: any): Observable<any>
+
 loadByIndex(storeName: string, indexName: string, key: any): Observable<any>
+
 loadAll(storeName: string): Observable<any>
+
 update(storeName: string, key: any, object: object): Observable<any>
+
 updateByIndex(storeName: string, indexName: string, key: any, object: object): Observable<any>
+
 delete(storeName: string, key: any): Observable<any>
+
 deleteDatabase(): Observable<any>
 ```
 
